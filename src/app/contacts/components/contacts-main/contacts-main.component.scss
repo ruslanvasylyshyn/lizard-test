@@ -56,3 +56,10 @@
         }
     }
 }
+
+
+@media screen and (max-width: 1280px) {
+    .contacts-cards {
+        justify-content: space-evenly;
+    }
+}

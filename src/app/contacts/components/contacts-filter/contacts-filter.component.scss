@@ -17,6 +17,8 @@
         &__container:first-child {
             width: 420px;
             border-radius: 72px 0 0 72px;
+            position: relative;
+            display: inline-block;
         }
 
         &__select {
@@ -29,6 +31,22 @@
             line-height: 14px;
             color: #333333;
             opacity: 0.8;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+        }
+
+        &__container:first-child::after {
+            content: '';
+            background-image: url('/assets/icons/down_arrow.svg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 14px;
+            top: 7px;
+            width: 12px;
+            height: 12px;
         }
 
         &__container:last-child {
