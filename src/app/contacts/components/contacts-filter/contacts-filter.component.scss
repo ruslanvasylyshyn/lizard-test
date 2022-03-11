@@ -5,7 +5,6 @@
         display: flex;
 
         &__container {
-            width: 1251px;
             height: 28px;
             background: #FFFFFF;
             opacity: 0.9;
@@ -55,8 +54,31 @@
 
         &__btn {
             margin-right: 9px;
+            margin-left: 9px;
             height: 20px;
             color: #6E767D;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contacts-filter {
+
+        &-form {
+            flex-direction: column-reverse; 
+
+            &__container:first-child,
+            &__container:last-child {
+                border-radius: 72px;
+            }
+
+            &__container:first-child {
+                width: 100%;
+            }
+
+            &__container:last-child {
+                margin-bottom: 12px;
+            }
         }
     }
 }
@@ -115,7 +137,7 @@
                 height: 16px;
                 width: 16px;
                 left: -6px;
-                bottom: -2px;
+                bottom: -1px;
                 background-color: white;
                 -webkit-transition: .4s;
                 transition: .4s;
@@ -141,5 +163,20 @@
 
     &-container:first-child {
         margin-right: 54px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contacts-toggle {
+        flex-direction: column;
+        padding-left: 6px;
+
+        &-container {
+            margin-bottom: 12px;
+        }
+
+        &-container:first-child {
+            margin-right: 0;
+        }
     }
 }
