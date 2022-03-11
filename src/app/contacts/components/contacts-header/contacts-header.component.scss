@@ -1,0 +1,21 @@
+.contacts-header {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+
+    &__text {
+        width: 127px;
+        margin: 24px auto;
+        text-transform: uppercase;
+        color: #282B2E;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: calc(100% - 48px);
+        height: 3px;
+        background: #D7D7D7;
+        margin: 0 auto;
+    }
+}
